@@ -1,0 +1,40 @@
+
+
+.blank {
+	background-color: grey;
+	height: 90px;
+	width: 90px;
+	margin-bottom: 7px;
+
+	border-radius: 100%;
+
+	float: left;
+}
+
+div .columns  {
+	
+	height: 600px;
+	width: 100px;
+	margin: 0 auto;
+}
+
+.red {
+	background-color: red;
+	height: 90px;
+	width: 90px;
+	margin-bottom: 7px;
+
+	border-radius: 100%;
+
+	float: left;
+}
+.black {
+	background-color: black;
+	height: 90px;
+	width: 90px;
+	margin-bottom: 7px;
+
+	border-radius: 100%;
+
+	float: left;
+}
