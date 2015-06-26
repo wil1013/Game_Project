@@ -15,6 +15,8 @@ $('#7').click(makeColorCol7);
 
 var turn = 0;
 var colHeight = 6;
+
+
 var nextOpen1 = 0;
 var nextOpen2 = 0;
 var nextOpen3 = 0;
@@ -32,7 +34,7 @@ var bottom4Col =[];
 var bottom5Col =[];
 var bottom6Col =[];
 var bottom7Col =[];
-var testArray = [];
+
 /*var rowArrayA = function(){
 	 var pizza= [bottom1Col[0],bottom1Col[0],bottom1Col[0],bottom1Col[0],bottom1Col[0],bottom1Col[0],bottom1Col[0]];
 	 testArray.push(pizza);}
@@ -43,7 +45,7 @@ var rowArrayD =0;
 var rowArrayE =0;
 var rowArrayF =0;
 */
-
+//$('<div id="'[i]'')
 
 var makeColorCol1 = function(){
 	if(bottom1Col.length>=colHeight){	
