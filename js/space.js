@@ -32,6 +32,17 @@ var bottom4Col =[];
 var bottom5Col =[];
 var bottom6Col =[];
 var bottom7Col =[];
+var testArray = [];
+/*var rowArrayA = function(){
+	 var pizza= [bottom1Col[0],bottom1Col[0],bottom1Col[0],bottom1Col[0],bottom1Col[0],bottom1Col[0],bottom1Col[0]];
+	 testArray.push(pizza);}
+
+var rowArrayB =	[bottom1Col[1],bottom1Col[1],bottom1Col[1],bottom1Col[1],bottom1Col[1],bottom1Col[1],bottom1Col[1]];
+var rowArrayC =0;
+var rowArrayD =0;
+var rowArrayE =0;
+var rowArrayF =0;
+*/
 
 
 var makeColorCol1 = function(){
