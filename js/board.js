@@ -5,7 +5,7 @@ $(function() {
 	var columns = [1,2,3,4,5,6,7];
 	var rows = ['a','b','c','d','e','f'];
 
-				
+//Sets up board
 //an array per column - push R or B when column is clicked
 var  makeBoard= function(){
 	for (var w = 0; w<columns.length; w++){
@@ -25,7 +25,3 @@ var  makeBoard= function(){
 makeBoard();
 
 
-//var spot
-
-
-//var move

@@ -1,5 +1,6 @@
 $(function() {
 	console.log('Loaded');
+$('#resetButton').click(restart);
 $(this).click(horizontalPush);
 $(this).click(diagSWtoNEPush);
 $(this).click(diagNWtoSEPush);
@@ -8,7 +9,7 @@ $(this).click(gameCheckerHorizontal);
 $(this).click(gameCheckerDiagSWtoNE);
 $(this).click(gameCheckerDiagNWtoSE);
 });
-$('#resetButton').click(restart);
+
 var bottom1Col =[];
 var bottom2Col =[];
 var bottom3Col =[];
@@ -31,7 +32,7 @@ var diagSWtoNEArrays = [];
 var diagNWtoSEArrays = [];
 
 
-
+//resets the game by clearing all arrays and setting all divs to 'blank'
 var restart = function(){
 	$('div .red').attr('class','blank');
 	$('div .black').attr('class','blank');
@@ -73,7 +74,7 @@ var tied = function(){
 };
 
 
-
+//creates an array for horizonal check for win
 var horizontalPush = function(){
 	horizontalArrays= [];
 	for (var i =0 ; i < colHeight ; i++){
@@ -92,7 +93,7 @@ var horizontalPush = function(){
 }
 
 
-
+//creates an array to check for a diagonal win
 var diagNWtoSEPush = function(){
 	diagNWtoSEArrays =[];
 	//for (var i = colOrder.length ; i >=0; i--){
@@ -111,7 +112,7 @@ var diagNWtoSEPush = function(){
 
 	};
 
-
+//creates an array to check for a diagonal win
 var diagSWtoNEPush = function(){
 	diagSWtoNEArrays =[];
 
@@ -132,7 +133,7 @@ var diagSWtoNEPush = function(){
 		diagSWtoNEArrays.push(arrayPush7);
 		};	
 
-
+//takes the arrays of recorded wins and checks the contents for a winning combination. Ends game if a winning combination is found.
 var checkForWin = function(columnNumber){
  	var jointString = columnNumber.join('');
  	console.log(jointString);

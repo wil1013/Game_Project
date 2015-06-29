@@ -28,19 +28,7 @@ var nextOpen7 = 0;
 var colOrder = ['f','e','d','c','b','a'];
 
 
-
-/*var rowArrayA = function(){
-	 var pizza= [bottom1Col[0],bottom1Col[0],bottom1Col[0],bottom1Col[0],bottom1Col[0],bottom1Col[0],bottom1Col[0]];
-	 testArray.push(pizza);}
-
-var rowArrayB =	[bottom1Col[1],bottom1Col[1],bottom1Col[1],bottom1Col[1],bottom1Col[1],bottom1Col[1],bottom1Col[1]];
-var rowArrayC =0;
-var rowArrayD =0;
-var rowArrayE =0;
-var rowArrayF =0;
-*/
-//$('<div id="'[i]'')
-
+//the following functions change the colors of the slots, set the turns and record the moves for each column.
 var makeColorCol1 = function(){
 	if(bottom1Col.length>=colHeight){	
 	}
