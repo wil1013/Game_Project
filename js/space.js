@@ -27,13 +27,7 @@ var nextOpen7 = 0;
 
 var colOrder = ['f','e','d','c','b','a'];
 
-var bottom1Col =[];
-var bottom2Col =[];
-var bottom3Col =[];
-var bottom4Col =[];
-var bottom5Col =[];
-var bottom6Col =[];
-var bottom7Col =[];
+
 
 /*var rowArrayA = function(){
 	 var pizza= [bottom1Col[0],bottom1Col[0],bottom1Col[0],bottom1Col[0],bottom1Col[0],bottom1Col[0],bottom1Col[0]];

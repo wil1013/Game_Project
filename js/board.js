@@ -25,7 +25,6 @@ var  makeBoard= function(){
 makeBoard();
 
 
-
 //var spot
 
 

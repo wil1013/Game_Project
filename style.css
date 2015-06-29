@@ -1,40 +1,54 @@
 
+h1 {
+	font: #66FF33;
+	font-size: 100px;
+	height: 100px;
+	width: 200px;
+	color: green;
+	position: relative;
+	margin-right: auto ;
+	margin-left: auto;
+}
+#startButton{
+	
+}
+#board{
+	margin-right: auto;
+	margin-left: auto;
+}
 
 .blank {
-	background-color: grey;
+	background-color: transparent;
 	height: 90px;
 	width: 90px;
 	margin-bottom: 7px;
-
 	border-radius: 100%;
+	}
 
-	float: left;
-}
 
 div .columns  {
-	
+	background-color: transparent;
 	height: 600px;
 	width: 110px;
 	margin: 0 auto;
-}
+	float: left;
+	}
 
 .red {
 	background-color: red;
 	height: 90px;
 	width: 90px;
 	margin-bottom: 7px;
-
 	border-radius: 100%;
-
-	float: left;
-}
+	}
 .black {
-	background-color: black;
+	background-color: #66FF33;
 	height: 90px;
 	width: 90px;
 	margin-bottom: 7px;
-
 	border-radius: 100%;
-
-	float: left;
+	}
+body{
+background: url(https://img.washingtonpost.com/wp-apps/imrs.php?src=https://img.washingtonpost.com/blogs/capital-weather-gang/files/2015/06/Photo_icr.jpg&w=1484);
 }
+

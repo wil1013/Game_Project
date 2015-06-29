@@ -8,6 +8,14 @@ $(this).click(gameCheckerHorizontal);
 $(this).click(gameCheckerDiagSWtoNE);
 $(this).click(gameCheckerDiagNWtoSE);
 });
+$('#resetButton').click(restart);
+var bottom1Col =[];
+var bottom2Col =[];
+var bottom3Col =[];
+var bottom4Col =[];
+var bottom5Col =[];
+var bottom6Col =[];
+var bottom7Col =[];
 
 var winningCombo = ['RRRR','BBBB'];
 var builtArrays =  [bottom1Col,
@@ -22,10 +30,36 @@ var horizontalArrays = [];
 var diagSWtoNEArrays = [];
 var diagNWtoSEArrays = [];
 
-var restart = function(){
 
-	
-}
+
+var restart = function(){
+	$('div .red').attr('class','blank');
+	$('div .black').attr('class','blank');
+nextOpen1 = 0;
+nextOpen2 = 0;
+nextOpen3 = 0;
+nextOpen4 = 0;
+nextOpen5 = 0;
+nextOpen6 = 0;
+nextOpen7 = 0;
+bottom1Col =[];
+bottom2Col =[];
+bottom3Col =[];
+bottom4Col =[];
+bottom5Col =[];
+bottom6Col =[];
+bottom7Col =[];
+horizontalArrays = [];
+diagSWtoNEArrays = [];
+diagNWtoSEArrays = [];
+builtArrays =  [bottom1Col,
+				bottom2Col,
+				bottom3Col,
+				bottom4Col,
+				bottom5Col,
+				bottom6Col,
+				bottom7Col];
+};
 
 
 var totalMoves = function() {
@@ -41,7 +75,7 @@ var tied = function(){
 
 
 var horizontalPush = function(){
-	horArrays = [];
+	horizontalArrays= [];
 	for (var i =0 ; i < colHeight ; i++){
 	var arryPush = [bottom1Col[i]||0,
 					bottom2Col[i]||0,	
@@ -104,6 +138,8 @@ var checkForWin = function(columnNumber){
  	console.log(jointString);
  	if(jointString.includes(winningCombo[0]) || jointString.includes(winningCombo[1])){
  		alert('game over');
+ 		restart();
+ 	
  	}
 }
 
@@ -133,14 +169,6 @@ var gameCheckerDiagNWtoSE = function(){
 };
 
 
-/*
-var bottom1Col =[];
-var bottom2Col =[];
-var bottom3Col =[];
-var bottom4Col =[];
-var bottom5Col =[];
-var bottom6Col =[];
-var bottom7Col =[];
-*/
+
 
 
