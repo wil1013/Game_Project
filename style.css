@@ -21,8 +21,8 @@ font: 400 100px/1.5 'Pacifico', Helvetica, sans-serif;
   text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
   border-radius: 20%;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  
   
   
 	
@@ -64,6 +64,8 @@ div .columns  {
 body{
 	background-color: gray;
 	opacity: 
-
 	}
-
+#board{
+	width: 770px;
+  margin: 0 auto;
+}
